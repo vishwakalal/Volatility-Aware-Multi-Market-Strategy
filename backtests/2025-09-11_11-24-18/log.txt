@@ -1,0 +1,196 @@
+2025-09-11T15:24:21.4929691Z TRACE:: Engine.Main(): LEAN ALGORITHMIC TRADING ENGINE v2.5.0.0 Mode: DEBUG (64bit) Host: Vishwas-MacBook-Air
+2025-09-11T15:24:21.5136667Z TRACE:: Engine.Main(): Started 3:24 PM
+2025-09-11T15:24:21.5169156Z TRACE:: Config.Get(): Configuration key not found. Key: lean-manager-type - Using default value: LocalLeanManager
+2025-09-11T15:24:21.5379798Z TRACE:: JobQueue.NextJob(): Selected /LeanCLI/main.py
+2025-09-11T15:24:21.5853714Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-capacity - Using default value: 120
+2025-09-11T15:24:21.5855126Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-time-interval-minutes - Using default value: 1440
+2025-09-11T15:24:21.5856575Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-refill-amount - Using default value: 18
+2025-09-11T15:24:21.5862290Z TRACE:: Config.GetValue(): storage-limit - Using default value: 10737418240
+2025-09-11T15:24:21.5867113Z TRACE:: Config.GetValue(): storage-permissions - Using default value: Read=True Write=True Delete=True
+2025-09-11T15:24:21.5868037Z TRACE:: Config.Get(): Configuration key not found. Key: optimization-id - Using default value: 
+2025-09-11T15:24:21.5868840Z TRACE:: Config.Get(): Configuration key not found. Key: backtest-name - Using default value: local
+2025-09-11T15:24:21.5911364Z TRACE:: Config.Get(): Configuration key not found. Key: data-channel - Using default value: 
+2025-09-11T15:24:21.5914948Z TRACE:: Config.Get(): Configuration key not found. Key: python-venv - Using default value: 
+2025-09-11T15:24:21.5917212Z TRACE:: Config.Get(): Configuration key not found. Key: out-of-sample-max-end-date - Using default value: 
+2025-09-11T15:24:21.5919586Z TRACE:: Config.GetValue(): out-of-sample-days - Using default value: 0
+2025-09-11T15:24:21.5927674Z TRACE:: Config.Get(): Configuration key not found. Key: data-permission-manager - Using default value: DataPermissionManager
+2025-09-11T15:24:21.5929746Z TRACE:: Config.Get(): Configuration key not found. Key: data-monitor - Using default value: QuantConnect.Data.DataMonitor
+2025-09-11T15:24:21.6045863Z TRACE:: Config.GetValue(): algorithm-creation-timeout - Using default value: 90
+2025-09-11T15:24:21.6096847Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-09-11T15:24:21.6130767Z TRACE:: Config.Get(): Configuration key not found. Key: fundamental-data-provider - Using default value: CoarseFundamentalDataProvider
+2025-09-11T15:24:21.6157740Z TRACE:: AlgorithmManager.CreateTokenBucket(): Initializing LeakyBucket: Capacity: 120 RefillAmount: 18 TimeInterval: 1440
+2025-09-11T15:24:21.6163908Z TRACE:: Config.GetValue(): algorithm-manager-time-loop-maximum - Using default value: 20
+2025-09-11T15:24:21.6231207Z TRACE:: Config.GetValue(): downloader-data-update-period - Using default value: 7
+2025-09-11T15:24:21.6242729Z TRACE:: Engine.Run(): Resource limits '0' CPUs. 2147483647 MB RAM.
+2025-09-11T15:24:21.6259323Z TRACE:: TextSubscriptionDataSourceReader.SetCacheSize(): Setting cache size to 71582788 items
+2025-09-11T15:24:22.1440166Z TRACE:: PythonInitializer.Initialize(): start...
+2025-09-11T15:24:22.8758701Z TRACE:: PythonInitializer.Initialize(): ended
+2025-09-11T15:24:22.8782708Z TRACE:: AlgorithmPythonWrapper(): Python version 3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:26:34) [GCC 12.3.0]: Importing python module main
+2025-09-11T15:24:25.7041590Z TRACE:: AlgorithmPythonWrapper(): main successfully imported.
+2025-09-11T15:24:25.7198856Z TRACE:: AlgorithmPythonWrapper(): Creating IAlgorithm instance.
+2025-09-11T15:24:25.7266485Z TRACE:: Config.Get(): Configuration key not found. Key: databases-refresh-period - Using default value: 1.00:00:00
+2025-09-11T15:24:25.7901164Z TRACE:: Config.GetValue(): mute-python-library-logging - Using default value: True
+2025-09-11T15:24:25.7928477Z TRACE:: LocalObjectStore.Initialize(): Storage Root: /Storage. StorageFileCount 9999999. StorageLimit 10240MB. StoragePermissions Read=True Write=True Delete=True
+2025-09-11T15:24:25.7961257Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-09-11T15:24:25.7984061Z TRACE:: HistoryProviderManager.Initialize(): history providers [SubscriptionDataReaderHistoryProvider]
+2025-09-11T15:24:25.8004800Z TRACE:: BaseSetupHandler.Setup(LocalPlatform): UID: 414355, PID: -1, Version: 2.5.0.0, Source: WebIDE
+2025-09-11T15:24:25.8021253Z TRACE:: Config.Get(): Configuration key not found. Key: security-data-feeds - Using default value: 
+2025-09-11T15:24:25.9138457Z TRACE:: Config.GetValue(): data-feed-workers-count - Using default value: 8
+2025-09-11T15:24:25.9143122Z TRACE:: Config.GetValue(): data-feed-max-work-weight - Using default value: 400
+2025-09-11T15:24:25.9177814Z TRACE:: WeightedWorkScheduler(): will use 8 workers and MaxWorkWeight is 400
+2025-09-11T15:24:25.9989574Z TRACE:: Failed to assign conversion rates for the following cash: BTC,ETH,JPY. Attempting to request daily resolution history to resolve conversion rate
+2025-09-11T15:24:26.0011873Z TRACE:: BaseSetupHandler.SetupCurrencyConversions():
+Account Type: Margin
+
+Symbol      Quantity    Conversion = Value in USD
+USD: $      100000.00 @       1.00 = $100000
+BTC: ₿           0.00 @       0.00 = $0
+ETH: Ξ           0.00 @       0.00 = $0
+GBP: ₤           0.00 @     1.2945 = $0.00
+EUR: €           0.00 @     1.1603 = $0.00
+JPY: ¥           0.00 @       0.00 = $0
+-------------------------------------------------
+CashBook Total Value:                $100000.00
+
+2025-09-11T15:24:26.0024994Z TRACE:: Total margin information: TotalMarginUsed: 0.00, MarginRemaining: 100000.00
+2025-09-11T15:24:26.0028400Z TRACE:: SetUp Backtesting: User: 414355 ProjectId: -1 AlgoId: 1147155884
+2025-09-11T15:24:26.0043417Z TRACE:: Dates: Start: 01/01/2019 End: 01/01/2025 Cash: ¤100,000.00 MaximumRuntime: 100.00:00:00 MaxOrders: 2147483647
+2025-09-11T15:24:26.0057935Z TRACE:: BacktestingResultHandler(): Sample Period Set: 789.48
+2025-09-11T15:24:26.0065053Z TRACE:: Config.GetValue(): forward-console-messages - Using default value: True
+2025-09-11T15:24:26.0069698Z TRACE:: JOB HANDLERS:
+         DataFeed:             QuantConnect.Lean.Engine.DataFeeds.FileSystemDataFeed
+         Setup:                QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler
+         RealTime:             QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler
+         Results:              QuantConnect.Lean.Engine.Results.BacktestingResultHandler
+         Transactions:         QuantConnect.Lean.Engine.TransactionHandlers.BacktestingTransactionHandler
+         Object Store:         QuantConnect.Lean.Engine.Storage.LocalObjectStore
+         History Provider:     QuantConnect.Lean.Engine.HistoricalData.HistoryProviderManager
+         Brokerage:            QuantConnect.Brokerages.Backtesting.BacktestingBrokerage
+         Data Provider:        QuantConnect.Lean.Engine.DataFeeds.DefaultDataProvider
+
+2025-09-11T15:24:26.0164562Z TRACE:: Event Name "Daily Sampling", scheduled to run.
+2025-09-11T15:24:26.0183272Z TRACE:: AlgorithmManager.Run(): Begin DataStream - Start: 1/1/2019 12:00:00 AM Stop: 1/1/2025 11:59:59 PM Time: 8/8/2018 12:00:00 AM Warmup: True
+2025-09-11T15:24:26.0302281Z TRACE:: Debug: Launching analysis for 1147155884 with LEAN Engine v2.5.0.0
+2025-09-11T15:24:26.3111033Z TRACE:: UniverseSelection.AddPendingInternalDataFeeds(): Adding internal benchmark data feed SPY,#0,SPY,Hour,TradeBar,Trade,Adjusted,OpenInterest,Internal
+2025-09-11T15:24:26.3133202Z TRACE:: AlgorithmManager.Stream(): Subscriptions count before warm up: 31
+2025-09-11T15:24:26.3496790Z TRACE:: Debug: Warning: SetBenchmark(SPY): no existing symbol found, benchmark security will be added with Equity type.
+2025-09-11T15:24:26.3500359Z TRACE:: Debug: Accurate daily end-times now enabled by default. See more at https://qnt.co/3YHaWHL. To disable it and use legacy daily bars set self.settings.daily_precise_end_time = False.
+2025-09-11T15:24:26.3502685Z TRACE:: Debug: Algorithm starting warm up...
+2025-09-11T15:24:26.5384742Z TRACE:: AlgorithmManager.Stream(): Subscriptions count after warm up: 31
+2025-09-11T15:24:26.5563269Z TRACE:: Debug: Algorithm finished warming up.
+2025-09-11T15:24:26.5813632Z TRACE:: Config.GetValue(): portfolio-margin-series-count - Using default value: 5
+2025-09-11T15:24:26.6112158Z TRACE:: Debug: BTCUSD: Supertrend1=3565.7799874008756, Supertrend2=3451.7235581232385, RSI=59.60560270243962, EMA100=0.0, Weekly TWAP=3769.6080859375
+2025-09-11T15:24:26.6619875Z TRACE:: Debug: BTCUSD: Supertrend1=3316.268523832499, Supertrend2=3349.1725568313673, RSI=62.155872310909594, EMA100=0.0, Weekly TWAP=3553.82201171875
+2025-09-11T15:24:26.6623182Z TRACE:: Debug: ETHUSD: Supertrend1=103.44705954827327, Supertrend2=100.49811072999688, RSI=60.83243649768541, EMA100=0.0, Weekly TWAP=113.95983947753906
+2025-09-11T15:24:26.7176937Z TRACE:: Debug: BTCUSD: Supertrend1=3903.6944685693056, Supertrend2=3869.6735478300416, RSI=63.84777779220382, EMA100=3818.440385027908, Weekly TWAP=3988.533837890625
+2025-09-11T15:24:26.7704052Z TRACE:: Debug: ETHUSD: Supertrend1=158.87687520791908, Supertrend2=154.8157847954013, RSI=57.17764647088896, EMA100=135.74300444315685, Weekly TWAP=151.0851867675781
+2025-09-11T15:24:26.8261204Z TRACE:: Debug: AAPL: Supertrend1=43.32458976794211, Supertrend2=42.70532665188053, RSI=59.97875849737554, EMA100=46.18107172712305, Weekly TWAP=46.16659925031
+2025-09-11T15:24:26.8264626Z TRACE:: Debug: ETHUSD: Supertrend1=232.11318210719764, Supertrend2=224.3522980208247, RSI=58.036503342777586, EMA100=197.30237203198004, Weekly TWAP=255.0184149169922
+2025-09-11T15:24:26.8777523Z TRACE:: Debug: Warning: all market orders sent using daily data, or market orders sent after hours are automatically converted into MarketOnOpen orders.
+2025-09-11T15:24:26.9311937Z TRACE:: Debug: BTCUSD: Supertrend1=10479.589205539432, Supertrend2=10207.48673414732, RSI=56.496770075551964, EMA100=9380.995425514722, Weekly TWAP=10538.274296875
+2025-09-11T15:24:26.9314770Z TRACE:: Debug: AAPL: Supertrend1=49.32847285140977, Supertrend2=48.70290088034173, RSI=55.19258745025183, EMA100=48.9385477143419, Weekly TWAP=50.65093386471
+2025-09-11T15:24:27.0381011Z TRACE:: Debug: BTCUSD: Supertrend1=8350.662931750343, Supertrend2=8114.6688579441625, RSI=61.181864803977625, EMA100=9118.422546921436, Weekly TWAP=8408.65875
+2025-09-11T15:24:27.0384135Z TRACE:: Debug: ETHUSD: Supertrend1=172.63490313727252, Supertrend2=168.9403902344536, RSI=63.93462138907629, EMA100=191.39366767230695, Weekly TWAP=180.12740478515624
+2025-09-11T15:24:27.1419664Z TRACE:: Debug: BTCUSD: Supertrend1=7492.31032574861, Supertrend2=7355.4211213670815, RSI=63.13352351977625, EMA100=7987.079594984394, Weekly TWAP=7462.37041015625
+2025-09-11T15:24:27.1430362Z TRACE:: Debug: ETHUSD: Supertrend1=152.4299327529368, Supertrend2=148.38413982354368, RSI=57.39617005693463, EMA100=158.4377266446473, Weekly TWAP=149.95136688232424
+2025-09-11T15:24:27.2977313Z TRACE:: Debug: BTCUSD: Supertrend1=6807.182243561465, Supertrend2=6667.780948133132, RSI=65.21376046564451, EMA100=7549.371175925049, Weekly TWAP=6994.43638671875
+2025-09-11T15:24:27.2979939Z TRACE:: Debug: ETHUSD: Supertrend1=190.22746852988988, Supertrend2=184.87630085891476, RSI=58.43644981581546, EMA100=179.89136865349332, Weekly TWAP=188.60221191406248
+2025-09-11T15:24:27.3507117Z TRACE:: Debug: BTCUSD: Supertrend1=8848.408872452967, Supertrend2=8653.04416256856, RSI=66.77525064276692, EMA100=8413.712036396586, Weekly TWAP=9337.5254296875
+2025-09-11T15:24:27.5045535Z TRACE:: Debug: BTCUSD: Supertrend1=10721.290226504285, Supertrend2=10593.804131180143, RSI=70.18199477220845, EMA100=10566.299481396069, Weekly TWAP=10785.2960546875
+2025-09-11T15:24:27.5047857Z TRACE:: Debug: ETHUSD: Supertrend1=341.06408014216714, Supertrend2=333.10044658563965, RSI=68.3459610066694, EMA100=341.51860593546184, Weekly TWAP=356.92048706054686
+2025-09-11T15:24:27.6578400Z TRACE:: Debug: ETHUSD: Supertrend1=1555.6350052847192, Supertrend2=1489.1720283143193, RSI=59.19331652256769, EMA100=1334.7354235559367, Weekly TWAP=1699.801025390625
+2025-09-11T15:24:27.6580140Z TRACE:: Debug: BTCUSD: Supertrend1=51771.9284880972, Supertrend2=50036.29074821664, RSI=56.731487694134096, EMA100=39672.904554007095, Weekly TWAP=52313.98140625
+2025-09-11T15:24:27.7090778Z TRACE:: Debug: BTCUSD: Supertrend1=50358.2787811604, Supertrend2=48873.51656864247, RSI=58.07989070513055, EMA100=50969.568149490966, Weekly TWAP=56122.77828125
+2025-09-11T15:24:27.7598672Z TRACE:: Debug: BTCUSD: Supertrend1=41204.65464261513, Supertrend2=40017.953930513155, RSI=55.736338721629686, EMA100=40285.910842966754, Weekly TWAP=42159.19796875
+2025-09-11T15:24:27.7600318Z TRACE:: Debug: ETHUSD: Supertrend1=2788.9807262112276, Supertrend2=2695.0550941097235, RSI=61.754172906594896, EMA100=2543.3687387553564, Weekly TWAP=2968.6797265625
+2025-09-11T15:24:27.8117336Z TRACE:: Debug: BTCUSD: Supertrend1=42154.13030334352, Supertrend2=40934.778239012216, RSI=64.37614668071963, EMA100=44045.58661250745, Weekly TWAP=45180.35171875
+2025-09-11T15:24:27.8781367Z TRACE:: Debug: ETHUSD: Supertrend1=3766.510572835836, Supertrend2=3647.0684002936287, RSI=61.10981966570939, EMA100=3371.802062293415, Weekly TWAP=3911.402763671875
+2025-09-11T15:24:27.9849629Z TRACE:: Debug: BTCUSD: Supertrend1=37920.81091939891, Supertrend2=36730.35435327869, RSI=65.41920402588019, EMA100=44182.069248829044, Weekly TWAP=41255.20703125
+2025-09-11T15:24:28.1888803Z TRACE:: Debug: ETHUSD: Supertrend1=1730.219451401768, Supertrend2=1680.028246467278, RSI=61.399931023256045, EMA100=1760.445029210231, Weekly TWAP=1719.6121826171875
+2025-09-11T15:24:28.1890642Z TRACE:: Debug: ETHUSD: Supertrend1=1523.1452005067845, Supertrend2=1478.2947606276728, RSI=66.36099236585584, EMA100=1703.3751139281705, Weekly TWAP=1617.0312939453127
+2025-09-11T15:24:28.2399087Z TRACE:: Debug: ETHUSD: Supertrend1=1440.3369695405358, Supertrend2=1406.7520563197368, RSI=57.87532349880938, EMA100=1503.088937874758, Weekly TWAP=1394.7853125
+2025-09-11T15:24:28.2401636Z TRACE:: Debug: BTCUSD: Supertrend1=19410.948290705277, Supertrend2=19145.561028961696, RSI=67.60348346600286, EMA100=21120.19338917454, Weekly TWAP=19807.36703125
+2025-09-11T15:24:28.2956675Z TRACE:: Debug: ETHUSD: Supertrend1=1245.9456944842852, Supertrend2=1232.2523382639547, RSI=75.48655679908688, EMA100=1311.5966965875066, Weekly TWAP=1221.0301806640625
+2025-09-11T15:24:28.2958277Z TRACE:: Debug: BTCUSD: Supertrend1=21770.231973787344, Supertrend2=21433.782274794812, RSI=64.5508088649019, EMA100=19321.58947065276, Weekly TWAP=20837.583046875
+2025-09-11T15:24:28.3489255Z TRACE:: Debug: BTCUSD: Supertrend1=21337.593129057965, Supertrend2=20966.050622057057, RSI=70.24516592236164, EMA100=20259.986911133972, Weekly TWAP=22866.723359375
+2025-09-11T15:24:28.3490693Z TRACE:: Debug: BTCUSD: Supertrend1=20720.406364960603, Supertrend2=20217.583927015225, RSI=64.66324204768074, EMA100=21333.197695036255, Weekly TWAP=23029.065
+2025-09-11T15:24:28.3492597Z TRACE:: Debug: ETHUSD: Supertrend1=1459.314554724849, Supertrend2=1423.9788206502874, RSI=63.39739626973653, EMA100=1511.3130996265843, Weekly TWAP=1604.1261474609375
+2025-09-11T15:24:28.4018210Z TRACE:: Debug: BTCUSD: Supertrend1=25356.346107923117, Supertrend2=24921.839352945237, RSI=68.546333301696, EMA100=26491.880039105672, Weekly TWAP=26675.427890625
+2025-09-11T15:24:28.4019630Z TRACE:: Debug: ETHUSD: Supertrend1=1688.8231185858865, Supertrend2=1657.8719219905636, RSI=66.4343445964381, EMA100=1786.8582790973917, Weekly TWAP=1809.4168896484375
+2025-09-11T15:24:28.4574182Z TRACE:: Debug: BTCUSD: Supertrend1=26053.414474276775, Supertrend2=25762.864166007133, RSI=73.71348251974909, EMA100=27322.647819081212, Weekly TWAP=26487.3246875
+2025-09-11T15:24:28.4575689Z TRACE:: Debug: ETHUSD: Supertrend1=1608.7542961394427, Supertrend2=1588.4373697228, RSI=76.1094136920513, EMA100=1717.8938547622206, Weekly TWAP=1623.0246044921876
+2025-09-11T15:24:28.5097370Z TRACE:: Debug: ETHUSD: Supertrend1=1601.7316842912853, Supertrend2=1576.3261778878236, RSI=77.70831377365987, EMA100=1678.7514742140747, Weekly TWAP=1617.8081201171876
+2025-09-11T15:24:28.5608956Z TRACE:: Debug: BTCUSD: Supertrend1=41875.24515286076, Supertrend2=41259.49769905792, RSI=71.50081428235002, EMA100=40231.82590285024, Weekly TWAP=42234.47109375
+2025-09-11T15:24:28.6117493Z TRACE:: Debug: BTCUSD: Supertrend1=63883.118688733135, Supertrend2=62545.98383272976, RSI=61.635573566209786, EMA100=61505.49451179099, Weekly TWAP=63819.28265625
+2025-09-11T15:24:28.6119937Z TRACE:: Debug: ETHUSD: Supertrend1=3453.8532184970118, Supertrend2=3381.3054721647136, RSI=62.66697007165374, EMA100=3254.695834354417, Weekly TWAP=3459.3565234375
+2025-09-11T15:24:28.6652906Z TRACE:: Debug: BTCUSD: Supertrend1=56680.73955962754, Supertrend2=55459.37926842805, RSI=68.3888522294717, EMA100=62621.15635620938, Weekly TWAP=60214.0903125
+2025-09-11T15:24:28.6654593Z TRACE:: Debug: ETHUSD: Supertrend1=3003.8744284341074, Supertrend2=2931.6618629490545, RSI=67.43953126865794, EMA100=3315.256040698212, Weekly TWAP=3267.334384765625
+2025-09-11T15:24:28.6658141Z TRACE:: Debug: BTCUSD: Supertrend1=55451.06629304228, Supertrend2=54009.36822352573, RSI=62.873923757426354, EMA100=62162.50388262331, Weekly TWAP=60038.9953125
+2025-09-11T15:24:28.6659264Z TRACE:: Debug: BTCUSD: Supertrend1=54690.540988580586, Supertrend2=53540.41715504671, RSI=62.675079849886224, EMA100=60755.29300729734, Weekly TWAP=58568.11828125
+2025-09-11T15:24:28.7075294Z TRACE:: Synchronizer.GetEnumerator(): Exited thread.
+2025-09-11T15:24:28.7079027Z TRACE:: AlgorithmManager.Run(): Firing On End Of Algorithm...
+2025-09-11T15:24:28.7084656Z TRACE:: Engine.Run(): Exiting Algorithm Manager
+2025-09-11T15:24:28.7106987Z TRACE:: StopSafely(): Waiting for 'Isolator Thread' thread to stop...
+2025-09-11T15:24:28.7110175Z TRACE:: FileSystemDataFeed.Exit(): Start. Setting cancellation token...
+2025-09-11T15:24:28.7122783Z TRACE:: FileSystemDataFeed.Exit(): Exit Finished.
+2025-09-11T15:24:28.7124876Z TRACE:: BacktestingResultHandler.Exit(): starting...
+2025-09-11T15:24:28.7126729Z TRACE:: BacktestingResultHandler.Exit(): Saving logs...
+2025-09-11T15:24:28.7141319Z TRACE:: StopSafely(): Waiting for 'Result Thread' thread to stop...
+2025-09-11T15:24:28.7141442Z TRACE:: Debug: BTCUSD: Supertrend1=59203.51826777433, Supertrend2=58151.75746820418, RSI=67.77943244835018, EMA100=61648.94220005422, Weekly TWAP=63032.07984375
+2025-09-11T15:24:28.7142824Z TRACE:: Debug: ETHUSD: Supertrend1=2466.3693523930774, Supertrend2=2420.404966035756, RSI=73.99659111323811, EMA100=2684.181100893212, Weekly TWAP=2527.349599609375
+2025-09-11T15:24:28.7143457Z TRACE:: Debug: ETHUSD: Supertrend1=2920.1617055311967, Supertrend2=2838.6587927311866, RSI=57.891286432705265, EMA100=2753.5327504978736, Weekly TWAP=2841.9774609375004
+2025-09-11T15:24:28.7143991Z TRACE:: Debug: Algorithm Id:(1147155884) completed in 2.70 seconds at 7k data points per second. Processing total of 18,195 data points.
+2025-09-11T15:24:28.7146864Z TRACE:: Debug: Your log was successfully created and can be retrieved from: /Results/1147155884-log.txt
+2025-09-11T15:24:28.7147770Z TRACE:: BacktestingResultHandler.Run(): Ending Thread...
+2025-09-11T15:24:29.4260510Z TRACE:: 
+STATISTICS:: Total Orders 100
+STATISTICS:: Average Win 3.21%
+STATISTICS:: Average Loss -0.23%
+STATISTICS:: Compounding Annual Return 4.768%
+STATISTICS:: Drawdown 25.100%
+STATISTICS:: Expectancy 2.630
+STATISTICS:: Start Equity 100000.00
+STATISTICS:: End Equity 132307.29
+STATISTICS:: Net Profit 32.307%
+STATISTICS:: Sharpe Ratio 0.135
+STATISTICS:: Sortino Ratio 0.089
+STATISTICS:: Probabilistic Sharpe Ratio 2.014%
+STATISTICS:: Loss Rate 76%
+STATISTICS:: Win Rate 24%
+STATISTICS:: Profit-Loss Ratio 14.13
+STATISTICS:: Alpha 0.023
+STATISTICS:: Beta 0.059
+STATISTICS:: Annual Standard Deviation 0.192
+STATISTICS:: Annual Variance 0.037
+STATISTICS:: Information Ratio -0.065
+STATISTICS:: Tracking Error 0.224
+STATISTICS:: Treynor Ratio 0.438
+STATISTICS:: Total Fees $4.38
+STATISTICS:: Estimated Strategy Capacity $26000000000000.00
+STATISTICS:: Lowest Capacity Asset ETHUSD 2XR
+STATISTICS:: Portfolio Turnover 0.21%
+STATISTICS:: Drawdown Recovery 538
+STATISTICS:: OrderListHash 4a67fa66b64a968c6070081371d5987c
+2025-09-11T15:24:29.4261592Z TRACE:: BacktestingResultHandler.SendAnalysisResult(): Processed final packet
+2025-09-11T15:24:29.4264515Z TRACE:: Engine.Run(): Disconnecting from brokerage...
+2025-09-11T15:24:29.4268660Z TRACE:: Engine.Run(): Disposing of setup handler...
+2025-09-11T15:24:29.4270367Z TRACE:: Engine.Main(): Analysis Completed and Results Posted.
+2025-09-11T15:24:29.4273514Z TRACE:: DataMonitor.Exit(): start...
+2025-09-11T15:24:29.4274185Z TRACE:: StopSafely(): Waiting for '' thread to stop...
+2025-09-11T15:24:29.4292210Z TRACE:: DataMonitor.GenerateReport():
+DATA USAGE:: Total data requests 50
+DATA USAGE:: Succeeded data requests 9
+DATA USAGE:: Failed data requests 41
+DATA USAGE:: Failed data requests percentage 82%
+DATA USAGE:: Total universe data requests 0
+DATA USAGE:: Succeeded universe data requests 0
+DATA USAGE:: Failed universe data requests 0
+DATA USAGE:: Failed universe data requests percentage 0%
+2025-09-11T15:24:29.4316904Z TRACE:: DataMonitor.Exit(): end
+2025-09-11T15:24:29.4336234Z TRACE:: Engine.Main(): Packet removed from queue: 1147155884
+2025-09-11T15:24:29.4337842Z TRACE:: LeanEngineSystemHandlers.Dispose(): start...
+2025-09-11T15:24:29.4342273Z TRACE:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+2025-09-11T15:24:29.4343739Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): start...
+2025-09-11T15:24:29.4348837Z TRACE:: LocalObjectStore.Dispose(): start...
+2025-09-11T15:24:29.4355508Z TRACE:: LocalObjectStore.Dispose(): end
+2025-09-11T15:24:29.4357335Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.

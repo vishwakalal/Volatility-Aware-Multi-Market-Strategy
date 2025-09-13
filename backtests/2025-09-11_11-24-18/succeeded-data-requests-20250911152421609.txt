@@ -1,0 +1,9 @@
+/forex/oanda/daily/gbpusd.zip
+/crypto/coinbase/daily/ethusd_trade.zip
+/forex/oanda/daily/eurusd.zip
+/crypto/coinbase/daily/btcusd_trade.zip
+/crypto/coinbase/daily/btcusd_quote.zip
+/equity/usa/daily/aapl.zip
+/equity/usa/daily/spy.zip
+/equity/usa/hour/spy.zip
+/alternative/interest-rate/usa/interest-rate.csv
