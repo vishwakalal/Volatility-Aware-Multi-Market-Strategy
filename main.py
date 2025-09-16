@@ -114,7 +114,7 @@ class VolatilityShield(QCAlgorithm):
             # Entry condition
             if symbol in self.stock_symbols:
                 if (not self.spy_ema200.IsReady) or (self.Securities[self.spy_symbol].Price < self.spy_ema200.Current.Value):
-                    continue  # Risk-off
+                    continue
             if self.entry_prices[symbol] is None:
                 if self.ExposureCap() >= self.exposure_cap:
                     continue
